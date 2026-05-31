@@ -12,8 +12,8 @@ n8n marketing automation project at Dot.ID.
 This is a **pure Markdown repository** — no build system, no package manager,
 no tests. All work is writing, editing, and committing `.md` files.
 
-> Note: `CLAUDE-ajk.md` in the root belongs to a different project (LLM Council)
-> and does not describe this repository.
+This CLAUDE.md follows Andrej Karpathy's pattern for AI agent operating manuals —
+see [`lessons/claude-md-for-ai-agent-projects.md`](lessons/claude-md-for-ai-agent-projects.md).
 
 ---
 
@@ -39,7 +39,8 @@ no tests. All work is writing, editing, and committing `.md` files.
 │   └── coolify.md
 └── lessons/
     ├── public-image-urls-for-social.md
-    └── n8n-binary-data.md
+    ├── n8n-binary-data.md
+    └── claude-md-for-ai-agent-projects.md
 ```
 
 ---
@@ -137,6 +138,35 @@ The first line of every tool page sets context with a one-line verdict:
 **Verdict:** ✅ Worked — reliable public image host for social media automation
 ```
 This is separate from per-attempt verdicts inside case studies. Don't conflate them.
+
+---
+
+## Agent Behavior Guidelines
+
+Adapted from Karpathy's four principles for agentic coding — applied here to
+documentation work. Full rationale in
+[`lessons/claude-md-for-ai-agent-projects.md`](lessons/claude-md-for-ai-agent-projects.md).
+
+### 1. Think Before Writing
+If the scope of a new entry is ambiguous — what experience it covers, which
+content type fits, whether it overlaps an existing file — surface the ambiguity
+before writing. Don't silently pick one interpretation and produce the wrong entry.
+
+### 2. Simplicity First
+Minimum content to document the experience honestly. No padding, no generic
+advice that belongs in any tutorial, no sections repeated from CONTRIBUTING.md.
+If a point is already covered in a linked file, link — don't duplicate.
+
+### 3. Surgical Edits
+When improving an existing entry, change only the section that needs it. Don't
+reformat adjacent paragraphs, don't rewrite sections that aren't broken, don't
+"clean up" style that wasn't part of the request.
+
+### 4. Verifiable Completion
+Before marking an entry done, confirm:
+- Every template section is filled or has a `> TODO` stub (no silent omissions)
+- Every relative cross-link points to a file that actually exists
+- The verdict icon in the header matches the conclusion in the body
 
 ---
 
