@@ -40,7 +40,8 @@ see [`lessons/claude-md-for-ai-agent-projects.md`](lessons/claude-md-for-ai-agen
 └── lessons/
     ├── public-image-urls-for-social.md
     ├── n8n-binary-data.md
-    └── claude-md-for-ai-agent-projects.md
+    ├── claude-md-for-ai-agent-projects.md
+    └── building-a-good-claude-md.md
 ```
 
 ---
